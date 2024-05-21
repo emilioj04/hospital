@@ -13,8 +13,7 @@ public class Paciente extends Persona {
 		this.citaList = new ArrayList<>();
 		this.DoctorList = new ArrayList<>();
 	}
-
-	// Getters y setters
+	
 	public Collection<Enfermero> getEnfermeroList() {
 		return enfermeroList;
 	}
