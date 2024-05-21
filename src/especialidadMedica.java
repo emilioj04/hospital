@@ -1,10 +1,10 @@
 public enum especialidadMedica {
 	;
 
-	private int Cardiologia;
-	private int Pediatria;
-	private int Traumatologia;
-	private int Odontologia;
-	private int Psiquiatria;
+	private int CARDIOLOGIA;
+	private int PEDIATRIA;
+	private int TRAUMATOLOGIA;
+	private int ODONTOLOGIA;
+	private int PSIQUIATRIA;
 
 }

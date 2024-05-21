@@ -37,10 +37,51 @@ public class Doctor extends Persona implements GestionCitas {
 	}
 
 	// Método para obtener todos los pacientes de un enfermero
-	public Collection<Paciente> obtenerPacientesDeEnfermero(Enfermero enfermero) {
-		if (enfermeroList.contains(enfermero)) {
-			return enfermero.getPacienteList();
+
+	public void asignarPaciente(Paciente paciente) {
+		if (!pacienteList.contains(paciente)) {
+			pacienteList.add(paciente);
 		}
-		return null;
 	}
+
+	public Collection<Paciente> getPacienteList() {
+		return pacienteList;
+	}
+
+	public void asignarCita(CitaMedica cita) {
+		if (!citaList.contains(cita)) {
+			citaList.add(cita);
+		}
+	}
+
+	public Collection<CitaMedica> getCitaList() {
+		return citaList;
+	}
+
+	public void asignarEnfermero(Enfermero enfermero) {
+		if (!enfermeroList.contains(enfermero)) {
+			enfermeroList.add(enfermero);
+		}
+	}
+
+	public Collection<Enfermero> getEnfermeroList() {
+		return enfermeroList;
+	}
+
+	public void setEspecialidad(especialidadMedica especialidad) {
+		this.especialidad = especialidad;
+	}
+
+	public especialidadMedica getEspecialidad() {
+		return this.especialidad;
+	}
+
+	public void setIdLicencia(int IdLicencia) {
+		this.IdLicencia = IdLicencia;
+	}
+
+	public int getIdLicencia() {
+		return this.IdLicencia;
+	}
+
 }

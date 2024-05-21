@@ -14,6 +14,4 @@ public class Enfermero extends Persona {
 		}
 	}
 
-	public Collection<Paciente> getPacienteList() {
-		return pacienteList;}
 }
