@@ -8,6 +8,12 @@ public class Enfermero extends Persona {
 	Collection<Paciente> pacienteList;
 	private int IdLicencia;
 
-	// Getters y setters
-	// ... (similar a los de la clase Persona)
+	public void asignarPaciente(Paciente paciente) {
+		if (!pacienteList.contains(paciente)) {
+			pacienteList.add(paciente);
+		}
+	}
+
+	public Collection<Paciente> getPacienteList() {
+		return pacienteList;}
 }

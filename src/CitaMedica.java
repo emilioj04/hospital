@@ -1,16 +1,4 @@
-<<<<<<< Updated upstream:hospital/CitaMedica.java
-public class CitaMedica implements GestionCItas {
 
-	Doctor doctor;
-	Paciente paciente;
-	Enfermero enfermero;
-	private Date fecha;
-	private Time hora;
-	private String motivoCita;
-	private estadoCita estado;
-	private Int contadorCitas;
-
-=======
 import java.util.Date;
 
 public class CitaMedica implements GestionCitas {
@@ -44,6 +32,4 @@ public class CitaMedica implements GestionCitas {
 	}
 
 	// Getters y setters
-	// ... (similar a los de las otras clases)
->>>>>>> Stashed changes:CitaMedica.java
 }
